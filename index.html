@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+
+<!-- This code was generated using AnimaApp.com. 
+This code is a high-fidelity prototype.
+Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code -->
+
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=1440, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@font-face {
+    font-family: "Agus Sans-Regular";
+	font-style: normal;
+	font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/5d084032f59c1fdfe4389ed5/AgusSans-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible-Regular";
+	font-style: normal;
+	font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/5fbbcd51684f8c4e368c4791/files/atkinson-hyperlegible-regular-102.woff') format("woff");
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible-Bold";
+	font-style: normal;
+	font-weight: 700;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/6005de598e2c1498d9f79901/fonts/atkinson-hyperlegible-bold-102.otf') format("opentype");
+}
+
+.component-wrapper a,
+.screen a {
+    text-decoration: none;
+    display: contents;
+}
+
+
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen *,
+.component-wrapper *{
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.container-center-vertical,
+.container-center-horizontal {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.container-center-vertical {
+    align-items: center;
+    height: 100%;
+}
+
+.container-center-horizontal {
+    justify-content: center;
+    width: 100%;
+}
+
+.container-center-vertical > *,
+.container-center-horizontal > * {
+    pointer-events: auto;
+    flex-shrink: 0;
+}
+
+.component-wrapper,
+.screen {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+.auto-animated div {
+    opacity: 0;
+    position: absolute;
+    --z-index: -1;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay {
+position: absolute;
+opacity: 0;
+display: none;
+top: 0;
+width: 100%;
+height: 100%;
+position: fixed;
+}
+
+.animate-appear {
+    opacity: 0;
+    display: block;
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+}
+
+.animate-disappear {
+    opacity: 1;
+    display: block;
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+}
+
+.animate-nodelay {
+    animation-delay: 0s;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.align-self-flex-start {
+    align-self: flex-start;
+}
+.align-self-flex-end {
+    align-self: flex-end;
+}
+.align-self-flex-center {
+    align-self: center;
+}
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+ input:focus {
+    outline: none;
+}
+.component-wrapper,
+.component-wrapper * {
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper a,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe,
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+/* screen - landing */
+
+.animate-enter {
+  animation: animate-enter-frames 0.50s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+opacity: 0;
+}
+.atkinsonhyperlegible-regular-normal-baby-powder-14-2px {
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 14.2px;
+  font-style: normal;
+  font-weight: 400;
+}
+.atkinsonhyperlegible-regular-normal-baby-powder-18px {
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.atkinsonhyperlegible-regular-normal-portage-22px {
+  color: var(--portage);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+.atkinsonhyperlegible-regular-normal-white-24px {
+  color: var(--white);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.border-0-9px-aquamarine {
+  border: 0.9px solid var(--aquamarine);
+}
+.landing {
+  background-color: var(--baby-powder);
+  height: 100vh;
+  margin: 0px;
+  min-height: 16178px;
+  min-width: 1440px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.landing .a-comfortable-m-t-the-super-app-C61RwL {
+  background-color: transparent;
+  color: rgba(80,80,80,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 662px);
+  letter-spacing: 0.00px;
+  line-height: 24.8px;
+  position: absolute;
+  text-align: left;
+  top: 8052px;
+  white-space: nowrap;
+  width: auto;
+}
+.landing .a-one-stop-solu-tities-securely-C61RwL {
+  background-color: transparent;
+  color: var(--portage);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 316px);
+  letter-spacing: 0.00px;
+  line-height: 34.8px;
+  position: absolute;
+  text-align: left;
+  top: 15037px;
+  white-space: nowrap;
+  width: auto;
+}
+.landing .a-self-help-boo-ns-with-tipsetc-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 171px);
+  letter-spacing: 0.00px;
+  line-height: 31.9px;
+  position: absolute;
+  text-align: left;
+  top: 10910px;
+  width: 398px;
+}
+.landing .a-single-monoau-umans-worldwide-sDLNVS {
+  background-color: transparent;
+  color: var(--licorice);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 24.9px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 491px);
+  letter-spacing: 0.00px;
+  line-height: 37.3px;
+  position: absolute;
+  text-align: center;
+  top: 129px;
+  width: 980px;
+}
+.landing .add-1-5brNdF {
+  background-color: transparent;
+  height: 559px;
+  left: calc(50.00% - 406px);
+  object-fit: cover;
+  position: absolute;
+  top: 127px;
+  width: 344px;
+}
+.landing .an-office-worke-paper-a-day-ie-ZZDxz8 {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.14px;
+  line-height: 21.3px;
+  position: absolute;
+  text-align: left;
+  top: 14px;
+  white-space: nowrap;
+  width: 281px;
+}
+.landing .and-on-average-k-1-2-languages-fTjTHD {
+  background-color: transparent;
+  height: auto;
+  left: 14px;
+  letter-spacing: 0.14px;
+  line-height: 21.3px;
+  position: absolute;
+  text-align: center;
+  top: 178px;
+  width: 325px;
+}
+.landing .ar-vr-1-C61RwL {
+  background-color: transparent;
+  height: 2660px;
+  left: 0px;
+  position: absolute;
+  top: 11821px;
+  width: calc(100.00% + 1px);
+}
+.landing .ar-vr-2-2p4Gmi {
+  background-color: transparent;
+  height: 736px;
+  left: calc(50.00% + 18px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 562px;
+}
+.landing .ar-vr-3-2p4Gmi {
+  background-color: transparent;
+  height: 623px;
+  left: calc(50.00% - 726px);
+  object-fit: cover;
+  position: absolute;
+  top: 194px;
+  width: 727px;
+}
+.landing .ar-vr-4-2p4Gmi {
+  background-color: transparent;
+  height: 527px;
+  left: calc(50.00% - 1px);
+  object-fit: cover;
+  position: absolute;
+  top: 568px;
+  width: 727px;
+}
+.landing .ar-vr-screen-1-2p4Gmi {
+  background-color: transparent;
+  height: 736px;
+  left: calc(50.00% - 363px);
+  object-fit: cover;
+  position: absolute;
+  top: 607px;
+  width: 486px;
+}
+.landing .ar-vr-to-map-view-feature-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 653px);
+  letter-spacing: 0.00px;
+  line-height: 34.8px;
+  opacity: 0.5;
+  position: absolute;
+  text-align: left;
+  top: 13482px;
+  white-space: nowrap;
+  width: auto;
+}
+.landing .authentication-ces-you-visited-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 520px);
+  letter-spacing: 0.00px;
+  line-height: 31.9px;
+  position: absolute;
+  text-align: left;
+  top: 11380px;
+  width: 302px;
+}
+.landing .blog-C61RwL {
+  background-color: transparent;
+  height: 756px;
+  left: calc(50.00% + 165px);
+  object-fit: cover;
+  position: absolute;
+  top: 10449px;
+  width: 530px;
+}
+.landing .easy-all-in-one-loginsignup-C61RwL {
+  background-color: transparent;
+  color: transparent;
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 662px);
+  letter-spacing: 0.00px;
+  line-height: 46.6px;
+  position: absolute;
+  top: 7820px;
+  width: 581px;
+}
+.landing .easy-form-filli-smart-qr-codes-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 653px);
+  letter-spacing: 0.00px;
+  line-height: 34.8px;
+  opacity: 0.5;
+  position: absolute;
+  text-align: left;
+  top: 13645px;
+  width: 334px;
+}
+.landing .easy-to-use-int-and-a-lot-more-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 205px);
+  letter-spacing: 0.00px;
+  line-height: 31.9px;
+  position: absolute;
+  text-align: left;
+  top: 10127px;
+  width: 335px;
+}
+.landing .easy-translatio-f-ar-technology-DnLFAZ {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 9px;
+  letter-spacing: 0.00px;
+  line-height: 27.0px;
+  position: absolute;
+  top: 41px;
+  width: 330px;
+}
+.landing .ellipse-15-aCi14x {
+  background-color: transparent;
+  height: 60px;
+  left: calc(50.00% - 48px);
+  position: absolute;
+  top: 181px;
+  width: 60px;
+}
+.landing .ellipse-16-aCi14x {
+  background-color: transparent;
+  height: 28px;
+  left: calc(50.00% + 17px);
+  position: absolute;
+  top: 165px;
+  width: 28px;
+}
+.landing .ellipse-17-aCi14x {
+  background-color: transparent;
+  height: 24px;
+  left: calc(50.00% - 17px);
+  position: absolute;
+  top: 152px;
+  width: 23px;
+}
+.landing .ellipse-18-aCi14x {
+  background-color: transparent;
+  height: 37px;
+  left: calc(50.00% - 79px);
+  position: absolute;
+  top: 149px;
+  width: 37px;
+}
+.landing .ellipse-19-aCi14x {
+  background-color: transparent;
+  height: 28px;
+  left: calc(50.00% + 51px);
+  position: absolute;
+  top: 79px;
+  width: 28px;
+}
+.landing .ellipse-20-aCi14x {
+  background-color: transparent;
+  height: 23px;
+  left: calc(50.00% - 44px);
+  position: absolute;
+  top: 67px;
+  width: 24px;
+}
+.landing .ellipse-21-aCi14x {
+  background-color: transparent;
+  height: 24px;
+  left: calc(50.00% + 37px);
+  position: absolute;
+  top: 112px;
+  width: 23px;
+}
+.landing .ellipse-22-aCi14x {
+  background-color: transparent;
+  height: 28px;
+  left: calc(50.00% - 42px);
+  position: absolute;
+  top: 39px;
+  width: 28px;
+}
+.landing .ellipse-23-aCi14x {
+  background-color: transparent;
+  height: 28px;
+  left: calc(50.00% - 79px);
+  position: absolute;
+  top: 127px;
+  width: 28px;
+}
+.landing .ellipse-24-aCi14x {
+  background-color: transparent;
+  height: 60px;
+  left: calc(50.00% + 68px);
+  position: absolute;
+  top: 104px;
+  width: 60px;
+}
+.landing .ellipse-25-aCi14x {
+  background-color: transparent;
+  height: 60px;
+  left: calc(50.00% - 9px);
+  position: absolute;
+  top: -11px;
+  width: 60px;
+}
+.landing .ellipse-26-aCi14x {
+  background-color: transparent;
+  height: 60px;
+  left: calc(50.00% - 124px);
+  position: absolute;
+  top: 114px;
+  width: 60px;
+}
+.landing .ellipse-27-aCi14x {
+  background-color: transparent;
+  height: 60px;
+  left: calc(50.00% - 101px);
+  position: absolute;
+  top: 18px;
+  width: 60px;
+}
+.landing .ellipse-4-P7Rke1 {
+  background-color: transparent;
+  height: 236px;
+  left: calc(50.00% - 118px);
+  position: absolute;
+  top: -2px;
+  width: 236px;
+}
+.landing .ellipse-5-P7Rke1 {
+  background-color: transparent;
+  height: 188px;
+  left: calc(50.00% - 94px);
+  position: absolute;
+  top: 22px;
+  width: 188px;
+}
+.landing .ellipse-6-P7Rke1 {
+  background-color: transparent;
+  height: 240px;
+  left: calc(50.00% - 120px);
+  position: absolute;
+  top: -4px;
+  width: 240px;
+}
+.landing .f1-1-5brNdF {
+  background-color: transparent;
+  height: 446px;
+  left: calc(50.00% - 498px);
+  object-fit: cover;
+  position: absolute;
+  top: 219px;
+  width: 274px;
+}
+.landing .f2-1-5brNdF {
+  background-color: transparent;
+  height: 709px;
+  left: calc(50.00% - 247px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 436px;
+}
+.landing .f3-1-5brNdF {
+  background-color: transparent;
+  height: 560px;
+  left: calc(50.00% + 45px);
+  object-fit: cover;
+  position: absolute;
+  top: 127px;
+  width: 345px;
+}
+.landing .frame-67-rFX9Nh {
+  background-color: transparent;
+  border: 0.9px solid var(--aquamarine);
+  border-radius: 10.627531051635742px;
+  height: 235px;
+  left: calc(50.00% - 423px);
+  position: absolute;
+  top: 0px;
+  width: 352px;
+}
+.landing .frame-68-rFX9Nh {
+  background-color: transparent;
+  border: 0.9px solid var(--aquamarine);
+  border-radius: 10.627531051635742px;
+  height: 235px;
+  left: calc(50.00% + 71px);
+  position: absolute;
+  top: 0px;
+  width: 352px;
+}
+.landing .frame-69-ahGy4x {
+  background-color: transparent;
+  border-radius: 10.781797409057617px;
+  height: 164px;
+  left: calc(50.00% - 548px);
+  position: absolute;
+  top: 0px;
+  width: 347px;
+}
+.landing .frame-70-ahGy4x {
+  background-color: transparent;
+  border-radius: 10.781797409057617px;
+  height: 164px;
+  left: calc(50.00% + 201px);
+  position: absolute;
+  top: 1px;
+  width: 347px;
+}
+.landing .frame-71-ahGy4x {
+  background-color: transparent;
+  border-radius: 10.781797409057617px;
+  height: 164px;
+  left: calc(50.00% - 548px);
+  position: absolute;
+  top: 210px;
+  width: 347px;
+}
+.landing .frame-72-9itK1d {
+  background-color: transparent;
+  border-radius: 10.781797409057617px;
+  height: 164px;
+  left: calc(50.00% + 201px);
+  position: absolute;
+  top: 210px;
+  width: 347px;
+}
+.landing .frame-72-ahGy4x {
+  background-color: transparent;
+  border-radius: 10.781797409057617px;
+  height: 164px;
+  left: calc(50.00% - 173px);
+  position: absolute;
+  top: 210px;
+  width: 347px;
+}
+.landing .frame-73-ahGy4x {
+  background-color: transparent;
+  border-radius: 10.781797409057617px;
+  height: 164px;
+  left: calc(50.00% - 173px);
+  position: absolute;
+  top: 1px;
+  width: 347px;
+}
+.landing .get-support-for-language-forms-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 118px);
+  letter-spacing: 0.00px;
+  line-height: 34.8px;
+  opacity: 0.75;
+  position: absolute;
+  text-align: left;
+  top: 13680px;
+  width: 408px;
+}
+.landing .gloid-1-D1n0rW {
+  background-color: transparent;
+  height: 834px;
+  left: calc(50.00% - 303px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 1074px;
+}
+.landing .gloid-C61RwL {
+  background-color: transparent;
+  bottom: 349px;
+  color: transparent;
+  font-family: 'Agus Sans-Regular', Helvetica, Arial, serif;
+  font-size: 229.9px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 316px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  width: 616px;
+}
+.landing .gloid-bjmSAl {
+  background-color: transparent;
+  height: 177px;
+  left: calc(50.00% - 354px);
+  position: absolute;
+  top: -4px;
+  width: 708px;
+}
+.landing .gloid-fDZWF0 {
+  background-color: transparent;
+  height: 177px;
+  left: calc(50.00% - 354px);
+  position: absolute;
+  top: -4px;
+  width: 708px;
+}
+.landing .gloid-ojBfAf {
+  background-color: transparent;
+  color: transparent;
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 309.4px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 745px);
+  letter-spacing: 3.09px;
+  line-height: 464.1px;
+  position: absolute;
+  top: 9px;
+  white-space: nowrap;
+  width: 980px;
+}
+.landing .group-7-9dtg3L {
+  background-color: transparent;
+  height: 752px;
+  left: calc(50.00% - 720px);
+  position: absolute;
+  top: 0px;
+  width: 700px;
+}
+.landing .group-73-aCi14x {
+  background-color: transparent;
+  height: 232px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 232px;
+}
+.landing .group-74-C61RwL {
+  background-color: transparent;
+  height: 232px;
+  left: calc(50.00% - 116px);
+  position: absolute;
+  top: 9166px;
+  width: 232px;
+}
+.landing .group-75-C61RwL {
+  background-color: transparent;
+  height: 253px;
+  left: calc(50.00% - 534px);
+  position: absolute;
+  top: 3746px;
+  width: 1073px;
+}
+.landing .group-75-VMr6Om {
+  background-color: transparent;
+  height: 252px;
+  left: calc(50.00% - 533px);
+  position: absolute;
+  top: 1151px;
+  width: 1070px;
+}
+.landing .group-77-hlxJRL {
+  background-color: transparent;
+  height: 1252px;
+  left: calc(50.00% - 1135px);
+  position: absolute;
+  top: 0px;
+  width: 2299px;
+}
+.landing .group-78-C61RwL {
+  background-color: transparent;
+  height: 1252px;
+  left: calc(50.00% - 1073px);
+  position: absolute;
+  top: 4419px;
+  width: 2328px;
+}
+.landing .group-79-ZZDxz8 {
+  background-color: transparent;
+  height: 114px;
+  left: 62px;
+  position: absolute;
+  top: 50px;
+  width: 231px;
+}
+.landing .group-79-fTjTHD {
+  background-color: transparent;
+  height: 114px;
+  left: 79px;
+  position: absolute;
+  top: 50px;
+  width: 197px;
+}
+.landing .group-8-9dtg3L {
+  background-color: transparent;
+  height: 752px;
+  left: calc(50.00% + 21px);
+  position: absolute;
+  top: 0px;
+  width: 700px;
+}
+.landing .group-80-7olElM {
+  background-color: transparent;
+  height: 199px;
+  left: calc(50.00% - 423px);
+  position: absolute;
+  top: 0px;
+  width: 846px;
+}
+.landing .group-81-C61RwL {
+  background-color: transparent;
+  height: 199px;
+  left: calc(50.00% - 423px);
+  position: absolute;
+  top: 1512px;
+  width: 846px;
+}
+.landing .group-82-C61RwL {
+  background-color: transparent;
+  height: 789px;
+  left: calc(50.00% - 554px);
+  position: absolute;
+  top: 2655px;
+  width: 1490px;
+}
+.landing .group-83-C61RwL {
+  background-color: transparent;
+  height: 280px;
+  left: calc(50.00% - 540px);
+  position: absolute;
+  top: 5941px;
+  width: 1086px;
+}
+.landing .group-84-C61RwL {
+  background-color: transparent;
+  height: 374px;
+  left: calc(50.00% - 547px);
+  position: absolute;
+  top: 6337px;
+  width: 1096px;
+}
+.landing .group-85-C61RwL {
+  background-color: transparent;
+  height: 235px;
+  left: calc(50.00% - 422px);
+  position: absolute;
+  top: 1791px;
+  width: 846px;
+}
+.landing .group-86-C61RwL {
+  background-color: transparent;
+  height: 749px;
+  left: calc(50.00% - 996px);
+  position: absolute;
+  top: 7071px;
+  width: 1991px;
+}
+.landing .group-87-C61RwL {
+  background-color: transparent;
+  height: 834px;
+  left: calc(50.00% - 771px);
+  position: absolute;
+  top: 8306px;
+  width: 1541px;
+}
+.landing .group-88-C61RwL {
+  background-color: transparent;
+  height: 1343px;
+  left: calc(50.00% - 731px);
+  position: absolute;
+  top: 12614px;
+  width: 1452px;
+}
+.landing .group-89-C61RwL {
+  background-color: transparent;
+  height: 709px;
+  left: calc(50.00% - 498px);
+  position: absolute;
+  top: 14190px;
+  width: 996px;
+}
+.landing .group-9-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 752px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 1441px;
+opacity: 0;
+}
+.landing .history-C61RwL {
+  background-color: transparent;
+  height: 755px;
+  left: calc(50.00% - 647px);
+  object-fit: cover;
+  position: absolute;
+  top: 10648px;
+  width: 515px;
+}
+.landing .home-C61RwL {
+  background-color: transparent;
+  color: rgba(53,107,248,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 82.4px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 106px);
+  letter-spacing: 0.00px;
+  line-height: 85.3px;
+  position: absolute;
+  text-align: left;
+  top: 11128px;
+  white-space: nowrap;
+  width: 224px;
+}
+.landing .home-VMr6Om {
+  background-color: transparent;
+  height: 755px;
+  left: calc(50.00% - 695px);
+  object-fit: cover;
+  position: absolute;
+  top: 9991px;
+  width: 610px;
+}
+.landing .how-it-helps-jQ4qbJ {
+  background-color: transparent;
+  color: var(--aquamarine);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 43.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 145px);
+  letter-spacing: 0.43px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  width: 289px;
+}
+.landing .icround-report-problem-JiBPzy {
+  background-color: transparent;
+  height: 45px;
+  left: calc(50.00% + 104px);
+  overflow: hidden;
+  position: absolute;
+  top: 16px;
+  width: 45px;
+}
+.landing .image-16-P7Rke1 {
+  background-color: transparent;
+  height: 115px;
+  left: calc(50.00% - 58px);
+  object-fit: cover;
+  position: absolute;
+  top: 58px;
+  width: 115px;
+}
+.landing .introducing-C61RwL {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 43.5px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 112px);
+  letter-spacing: 0.00px;
+  line-height: 45.0px;
+  position: absolute;
+  text-align: left;
+  top: 12112px;
+  white-space: nowrap;
+  width: 226px;
+}
+.landing .it-curbs-user-f-entire-process-q0qziN {
+  background-color: transparent;
+  height: auto;
+  left: 9px;
+  letter-spacing: 0.00px;
+  line-height: 27.0px;
+  position: absolute;
+  top: 14px;
+  width: 330px;
+}
+.landing .it-provides-a-n-dersyand-manner-jQ4qbJ {
+  background-color: transparent;
+  color: var(--licorice);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 505px);
+  letter-spacing: 0.00px;
+  line-height: 27.0px;
+  position: absolute;
+  top: 111px;
+  width: 1008px;
+}
+.landing .login-1-cPi90N {
+  background-color: transparent;
+  height: 749px;
+  left: calc(50.00% + 31px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 965px;
+}
+.landing .manage-all-your-es-at-one-place-C61RwL {
+  background-color: transparent;
+  color: rgba(53,107,248,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 408px);
+  letter-spacing: 0.00px;
+  line-height: 45.5px;
+  position: absolute;
+  text-align: left;
+  top: 14965px;
+  white-space: nowrap;
+  width: auto;
+}
+.landing .mask-group-2P4qUJ {
+  background-color: transparent;
+  height: 507px;
+  left: 460px;
+  position: absolute;
+  top: 11940px;
+  width: 508px;
+}
+.landing .mask-group-C61RwL {
+  background-color: transparent;
+  height: 852px;
+  left: 286px;
+  position: absolute;
+  top: 8972px;
+  width: 853px;
+}
+.landing .mask-group-J1YQmd {
+  background-color: transparent;
+  height: 507px;
+  left: -240px;
+  position: absolute;
+  top: 11110px;
+  width: 508px;
+}
+.landing .mask-group-QxM5SU {
+  background-color: transparent;
+  height: 1738px;
+  left: calc(50.00% - 870px);
+  position: absolute;
+  top: 12452px;
+  width: 1728px;
+}
+.landing .mask-group-VMr6Om {
+  background-color: transparent;
+  height: 372px;
+  left: calc(50.00% - 856px);
+  position: absolute;
+  top: 2885px;
+  width: 372px;
+}
+.landing .mask-group-mzXdH9 {
+  background-color: transparent;
+  height: 489px;
+  left: calc(50.00% + 375px);
+  position: absolute;
+  top: 975px;
+  width: 490px;
+}
+.landing .mask-group-qr8e7q {
+  background-color: transparent;
+  bottom: 231px;
+  height: 507px;
+  left: calc(50.00% - 254px);
+  position: absolute;
+  width: 508px;
+}
+.landing .my-qr-1-D1n0rW {
+  background-color: transparent;
+  height: 834px;
+  left: calc(50.00% - 771px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 1073px;
+}
+.landing .no-need-to-carr-hereever-you-go-C61RwL {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 592px);
+  letter-spacing: 0.00px;
+  line-height: 34.8px;
+  position: absolute;
+  top: 9633px;
+  width: 1187px;
+}
+.landing .official-languages-7g40hq {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 21.3px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 17px;
+  letter-spacing: 0.21px;
+  line-height: 31.9px;
+  position: absolute;
+  text-align: left;
+  top: 82px;
+  white-space: nowrap;
+  width: 171px;
+}
+.landing .on1-1-cPi90N {
+  background-color: transparent;
+  height: 749px;
+  left: calc(50.00% - 311px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 964px;
+}
+.landing .on2-1-cPi90N {
+  background-color: transparent;
+  height: 749px;
+  left: calc(50.00% - 654px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 965px;
+}
+.landing .on3-1-cPi90N {
+  background-color: transparent;
+  height: 749px;
+  left: calc(50.00% - 996px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 964px;
+}
+.landing .one-stop-global-authentication-kpS7Z4 {
+  background-color: transparent;
+  height: auto;
+  left: 9px;
+  letter-spacing: 0.00px;
+  line-height: 27.0px;
+  position: absolute;
+  top: 68px;
+  white-space: nowrap;
+  width: 330px;
+}
+.landing .problem-JiBPzy {
+  background-color: transparent;
+  color: rgba(255,83,114,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 87px);
+  letter-spacing: 0.43px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 16px;
+  width: 173px;
+}
+.landing .provides-news-a-policy-changes-CRzuAw {
+  background-color: transparent;
+  height: auto;
+  left: 9px;
+  letter-spacing: 0.00px;
+  line-height: 27.0px;
+  position: absolute;
+  top: 55px;
+  width: 330px;
+}
+.landing .rectangle-59-JiBPzy {
+  background-color: var(--baby-powder);
+  border-radius: 7.085020542144775px;
+  height: 252px;
+  left: calc(50.00% - 535px);
+  position: absolute;
+  top: 0px;
+  width: 1066px;
+}
+.landing .rectangle-59-jQ4qbJ {
+  background-color: var(--baby-powder);
+  border-radius: 7.187864780426025px;
+  height: 280px;
+  left: calc(50.00% - 543px);
+  position: absolute;
+  top: 0px;
+  width: 1082px;
+}
+.landing .rectangle-59-sDLNVS {
+  background-color: var(--baby-powder);
+  border-radius: 7.101754188537598px;
+  height: 253px;
+  left: calc(50.00% - 536px);
+  position: absolute;
+  top: 0px;
+  width: 1069px;
+}
+.landing .rectangle-60-JiBPzy {
+  background-color: transparent;
+  height: 84px;
+  left: calc(50.00% - 536px);
+  position: absolute;
+  top: 0px;
+  width: 1067px;
+}
+.landing .rectangle-60-jQ4qbJ {
+  background-color: transparent;
+  height: 81px;
+  left: calc(50.00% - 543px);
+  position: absolute;
+  top: 0px;
+  width: 1082px;
+}
+.landing .rectangle-60-sDLNVS {
+  background-color: transparent;
+  height: 84px;
+  left: calc(50.00% - 536px);
+  position: absolute;
+  top: 0px;
+  width: 1069px;
+}
+.landing .rectangle-61-C61RwL {
+  background-color: transparent;
+  height: 3931px;
+  left: -8px;
+  position: absolute;
+  top: 30px;
+  width: 1458px;
+}
+.landing .rectangle-62-C61RwL {
+  background-color: transparent;
+  height: 2159px;
+  left: 0px;
+  position: absolute;
+  top: 5208px;
+  width: calc(100.00% + 2px);
+}
+.landing .rectangle-63-Z3yGKt {
+  background-color: var(--white);
+  height: 26px;
+  left: calc(50.00% - 346px);
+  position: absolute;
+  top: 58px;
+  width: 113px;
+}
+.landing .rectangle-64-7olElM {
+  background-color: var(--white);
+  height: 14px;
+  left: calc(50.00% - 378px);
+  position: absolute;
+  top: 185px;
+  width: 745px;
+}
+.landing .rectangle-64-C61RwL {
+  background-color: transparent;
+  height: 4767px;
+  left: -3px;
+  position: absolute;
+  top: 0px;
+  width: calc(100.00% + 8px);
+}
+.landing .rectangle-65-C61RwL {
+  background-color: rgba(0,8,200,1.0);
+  height: 3162px;
+  left: -1px;
+  position: absolute;
+  top: 8659px;
+  width: calc(100.00% + 2px);
+}
+.landing .rectangle-66-C61RwL {
+  background-color: transparent;
+  bottom: 0px;
+  height: 872px;
+  left: -6px;
+  position: absolute;
+  width: calc(100.00% + 6px);
+}
+.landing .screenshot-56-1-Z3yGKt {
+  background-color: transparent;
+  height: 201px;
+  left: calc(50.00% - 424px);
+  position: absolute;
+  top: -1px;
+  width: 849px;
+}
+.landing .self-help-1-C61RwL {
+  background-color: transparent;
+  height: 755px;
+  left: calc(50.00% - 257px);
+  object-fit: cover;
+  position: absolute;
+  top: 10204px;
+  width: 525px;
+}
+.landing .sheets-a-year-vapvpH {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 21.3px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 50px;
+  letter-spacing: 0.21px;
+  line-height: 31.9px;
+  position: absolute;
+  text-align: left;
+  top: 82px;
+  white-space: nowrap;
+  width: 129px;
+}
+.landing .simple-mockup-free-scene-3-hlxJRL {
+  background-color: transparent;
+  height: 1121px;
+  left: calc(50.00% - 519px);
+  object-fit: cover;
+  position: absolute;
+  top: 23px;
+  width: 808px;
+}
+.landing .simple-mockup-free-scene2-1-hlxJRL {
+  background-color: transparent;
+  height: 1121px;
+  left: calc(50.00% - 1164px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 808px;
+}
+.landing .simple-mockup-free-scene3-1-hlxJRL {
+  background-color: transparent;
+  height: 468px;
+  left: calc(50.00% - 506px);
+  object-fit: cover;
+  position: absolute;
+  top: 47px;
+  width: 449px;
+}
+.landing .simple-mockup-free-scene4-1-hlxJRL {
+  background-color: transparent;
+  height: 468px;
+  left: calc(50.00% + 126px);
+  object-fit: cover;
+  position: absolute;
+  top: 65px;
+  width: 449px;
+}
+.landing .simple-mockup-free-scene5-2-B2dluX {
+  background-color: transparent;
+  height: 464px;
+  left: calc(50.00% + 379px);
+  object-fit: cover;
+  position: absolute;
+  top: 788px;
+  width: 445px;
+}
+.landing .simple-mockup-free-scene6-1-B2dluX {
+  background-color: transparent;
+  height: 464px;
+  left: calc(50.00% + 99px);
+  object-fit: cover;
+  position: absolute;
+  top: 729px;
+  width: 444px;
+}
+.landing .simple-mockup-free-scene7-1-B2dluX {
+  background-color: transparent;
+  height: 464px;
+  left: calc(50.00% + 705px);
+  object-fit: cover;
+  position: absolute;
+  top: 465px;
+  width: 444px;
+}
+.landing .simple-mockup-free-scene7-2-B2dluX {
+  background-color: transparent;
+  height: 464px;
+  left: calc(50.00% - 1150px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 444px;
+}
+.landing .simple-mockup-free-scene8-1-B2dluX {
+  background-color: transparent;
+  height: 464px;
+  left: calc(50.00% + 432px);
+  object-fit: cover;
+  position: absolute;
+  top: 414px;
+  width: 445px;
+}
+.landing .smart-analysis-authentication-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 653px);
+  letter-spacing: 0.00px;
+  line-height: 34.8px;
+  opacity: 0.5;
+  position: absolute;
+  text-align: left;
+  top: 13546px;
+  width: 334px;
+}
+.landing .span0-1TDtIX {
+  color: rgba(252,252,252,1.0);
+  font-style: normal;
+  line-height: 64px;
+}
+.landing .span0-1bKVjJ {
+  color: rgba(252,252,252,1.0);
+  font-style: normal;
+  line-height: 32px;
+}
+.landing .span0-2cEAn1 {
+  color: rgba(80,80,80,1.0);
+  font-style: normal;
+  line-height: 45px;
+}
+.landing .span0-Hpn86H {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span0-KUzm1Q {
+  color: rgba(252,252,252,1.0);
+  font-style: normal;
+  line-height: 18.0px;
+}
+.landing .span0-OdpppD {
+  color: rgba(252,252,252,1.0);
+  font-style: normal;
+  line-height: 18.0px;
+}
+.landing .span0-ZGaRhJ {
+  color: rgba(255,255,255,1.0);
+  font-style: normal;
+  line-height: 309.4px;
+}
+.landing .span0-cP3HsV {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span0-kqJnKE {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span0-poIyxh {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span0-ra68bK {
+  color: rgba(18,18,18,1.0);
+  font-style: normal;
+  line-height: 18.0px;
+}
+.landing .span0-s0gM1Q {
+  color: rgba(255,255,255,1.0);
+  font-style: normal;
+}
+.landing .span0-vXXHwR {
+  color: rgba(252,252,252,1.0);
+  font-style: normal;
+  line-height: 24px;
+}
+.landing .span1-1TDtIX {
+  color: rgba(90,248,189,1.0);
+  font-style: normal;
+  line-height: 64px;
+}
+.landing .span1-1bKVjJ {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.landing .span1-2cEAn1 {
+  color: rgba(53,107,248,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+}
+.landing .span1-Hpn86H {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18.0px;
+}
+.landing .span1-KUzm1Q {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span1-OdpppD {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span1-ZGaRhJ {
+  color: rgba(90,248,189,1.0);
+  font-style: normal;
+  line-height: 309.4px;
+}
+.landing .span1-cP3HsV {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18.0px;
+}
+.landing .span1-kqJnKE {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18.0px;
+}
+.landing .span1-poIyxh {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18.0px;
+}
+.landing .span1-ra68bK {
+  color: rgba(18,18,18,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18.0px;
+}
+.landing .span1-s0gM1Q {
+  color: rgba(90,248,189,1.0);
+  font-style: normal;
+}
+.landing .span1-vXXHwR {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.landing .span2-1TDtIX {
+  color: rgba(252,252,252,1.0);
+  font-style: normal;
+  line-height: 64px;
+}
+.landing .span2-KUzm1Q {
+  color: rgba(252,252,252,1.0);
+  font-style: normal;
+  line-height: 18.0px;
+}
+.landing .span2-cP3HsV {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span2-kqJnKE {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span2-poIyxh {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span2-ra68bK {
+  color: rgba(18,18,18,1.0);
+  font-style: normal;
+  line-height: 18.0px;
+}
+.landing .span2-vXXHwR {
+  color: rgba(252,252,252,1.0);
+  font-style: normal;
+  line-height: 24px;
+}
+.landing .span3-cP3HsV {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18.0px;
+}
+.landing .span3-poIyxh {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18.0px;
+}
+.landing .span4-cP3HsV {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .span5-cP3HsV {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18.0px;
+}
+.landing .span6-cP3HsV {
+  color: rgba(252,252,252,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.0px;
+}
+.landing .starting-1-ojBfAf {
+  background-color: transparent;
+  height: 789px;
+  left: calc(50.00% - 212px);
+  position: absolute;
+  top: 0px;
+  width: 953px;
+}
+.landing .stay-updated-ab-reform-changes-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 275px);
+  letter-spacing: 0.00px;
+  line-height: 31.9px;
+  position: absolute;
+  text-align: left;
+  top: 11181px;
+  width: 335px;
+}
+.landing .subtract-hlxJRL {
+  background-color: transparent;
+  height: 1121px;
+  left: calc(50.00% + 126px);
+  object-fit: cover;
+  position: absolute;
+  top: 46px;
+  width: 808px;
+}
+.landing .success-1-5brNdF {
+  background-color: transparent;
+  height: 456px;
+  left: calc(50.00% + 217px);
+  object-fit: cover;
+  position: absolute;
+  top: 219px;
+  width: 281px;
+}
+.landing .super-features-C61RwL {
+  background-color: transparent;
+  height: 88px;
+  left: calc(50.00% - 337px);
+  position: absolute;
+  top: 12180px;
+  width: 673px;
+}
+.landing .thank-you-for-scrolling-C61RwL {
+  background-color: transparent;
+  bottom: 75px;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 164px);
+  letter-spacing: 0.00px;
+  line-height: 33.1px;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.landing .that-amounts-to-n-just-one-year-ZZDxz8 {
+  background-color: transparent;
+  height: auto;
+  left: 14px;
+  letter-spacing: 0.14px;
+  line-height: 21.3px;
+  position: absolute;
+  text-align: center;
+  top: 178px;
+  width: 325px;
+}
+.landing .thats-where-we-step-in-C61RwL {
+  background-color: transparent;
+  color: transparent;
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 367px);
+  letter-spacing: 0.64px;
+  line-height: 96px;
+  position: absolute;
+  top: 2384px;
+  white-space: nowrap;
+  width: auto;
+}
+.landing .the-only-id-you-will-ever-need-ojBfAf {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 39.1px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 713px);
+  letter-spacing: 0.39px;
+  line-height: 58.7px;
+  position: absolute;
+  text-align: left;
+  top: 364px;
+  white-space: nowrap;
+  width: 528px;
+}
+.landing .there-are-6500-es-in-the-world-fTjTHD {
+  background-color: transparent;
+  height: auto;
+  left: 14px;
+  letter-spacing: 0.14px;
+  line-height: 21.3px;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  white-space: nowrap;
+  width: 325px;
+}
+.landing .two-factor-auth-user-identities-C61RwL {
+  background-color: transparent;
+  color: rgba(80,80,80,1.0);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 662px);
+  letter-spacing: 0.00px;
+  line-height: 24.8px;
+  position: absolute;
+  text-align: left;
+  top: 8109px;
+  white-space: nowrap;
+  width: auto;
+}
+.landing .union-P7Rke1 {
+  background-color: transparent;
+  height: 144px;
+  left: calc(50.00% - 72px);
+  position: absolute;
+  top: 44px;
+  width: 144px;
+}
+.landing .unique-digital-on-registration-PtzMk2 {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 9px;
+  letter-spacing: 0.00px;
+  line-height: 27.0px;
+  position: absolute;
+  top: 55px;
+  width: 330px;
+}
+.landing .use-this-glo-id-ticate-yourself-C61RwL {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 351px);
+  letter-spacing: 0.00px;
+  line-height: 24.8px;
+  position: absolute;
+  text-align: left;
+  top: 9510px;
+  white-space: nowrap;
+  width: auto;
+}
+.landing .vector-EUwuvr {
+  background-color: transparent;
+  height: 75.28%;
+  left: 6.81%;
+  position: absolute;
+  top: 12.36%;
+  width: 86.35%;
+}
+.landing .vector-bjmSAl {
+  background-color: transparent;
+  height: 560px;
+  left: calc(50.00% - 351px);
+  position: absolute;
+  top: 193px;
+  width: 702px;
+}
+.landing .vector-fDZWF0 {
+  background-color: transparent;
+  height: 560px;
+  left: calc(50.00% - 351px);
+  position: absolute;
+  top: 193px;
+  width: 702px;
+}
+.landing .verification-be-ue-to-each-user-h2qbqZ {
+  background-color: transparent;
+  height: auto;
+  left: 9px;
+  letter-spacing: 0.00px;
+  line-height: 27.0px;
+  position: absolute;
+  top: 41px;
+  width: 330px;
+}
+.landing .what-is-glo-id-sDLNVS {
+  background-color: transparent;
+  color: var(--aquamarine);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 42.6px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 159px);
+  letter-spacing: 0.43px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 16px;
+  width: 316px;
+}
+.landing .with-never-endi-aucratic-system-JiBPzy {
+  background-color: transparent;
+  color: var(--licorice);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 21.3px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 490px);
+  letter-spacing: 0.21px;
+  line-height: 31.9px;
+  position: absolute;
+  text-align: center;
+  top: 120px;
+  width: 978px;
+}
+.landing .with-our-ar-vr-to-authenticate-C61RwL {
+  background-color: transparent;
+  color: var(--portage);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 593px);
+  letter-spacing: 0.00px;
+  line-height: 34.8px;
+  position: absolute;
+  text-align: left;
+  top: 12749px;
+  width: 547px;
+}
+.landing .x10000-vapvpH {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 66.7px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.67px;
+  line-height: 100.1px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 229px;
+}
+.landing .x6500-7g40hq {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Bold', Helvetica, Arial, serif;
+  font-size: 66.7px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.67px;
+  line-height: 100.1px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 195px;
+}
+.landing .your-very-own-glo-id-C61RwL {
+  background-color: transparent;
+  color: var(--baby-powder);
+  font-family: 'Atkinson Hyperlegible-Regular', Helvetica, Arial, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 143px);
+  letter-spacing: 0.00px;
+  line-height: 33.1px;
+  position: absolute;
+  top: 9449px;
+  white-space: nowrap;
+  width: auto;
+}
+:root {
+  --aquamarine: rgba(90,248,189,1.0);
+  --baby-powder: rgba(252,252,252,1.0);
+  --licorice: rgba(18,18,18,1.0);
+  --portage: rgba(119,155,250,1.0);
+  --white: rgba(255,255,255,1.0);
+}
+@keyframes animate-enter-frames {
+
+from{opacity: 0;}
+to{opacity: 1;}
+}
+</style><meta name="author" content="AnimaApp.com - Design to code, Automated."></head><body style="margin: 0;background: rgba(252,252,252,1.0);"><input type="hidden" id="anPageName" name="page" value="landing"><div class="landing screen " data-id="77:405"><img class="rectangle-66-C61RwL" data-id="77:2094" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/rectangle-66@1x.png"><div class="rectangle-65-C61RwL" data-id="77:512"></div><div class="easy-all-in-one-loginsignup-C61RwL" data-id="77:477"><span class="span0-2cEAn1">Easy all in one</span><span class="span1-2cEAn1"><br>login/signup</span></div><div class="home-C61RwL" data-id="77:834">Home</div><div class="stay-updated-ab-reform-changes-C61RwL atkinsonhyperlegible-regular-normal-portage-22px" data-id="77:836">Stay updated about policies and reform changes.</div><img class="mask-group-C61RwL" data-id="77:2084" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/mask-group-1@1x.png"><div class="easy-to-use-int-and-a-lot-more-C61RwL atkinsonhyperlegible-regular-normal-portage-22px" data-id="77:838">Easy to use interface, with latest updates and self help features and a lot more..</div><div class="a-self-help-boo-ns-with-tipsetc-C61RwL atkinsonhyperlegible-regular-normal-portage-22px" data-id="77:839">A self help book to help register and understand policies and registrations, with tips,etc..</div><div class="authentication-ces-you-visited-C61RwL atkinsonhyperlegible-regular-normal-portage-22px" data-id="77:837">Authentication transaction for places you visited</div><div class="a-comfortable-m-t-the-super-app-C61RwL" data-id="77:825">A comfortable modern onboarding screen, giving a clear functionality about the super app.</div><div class="two-factor-auth-user-identities-C61RwL" data-id="77:827">Two-factor authentication, using phone number, hence providing more security to the user identities.</div><div class="your-very-own-glo-id-C61RwL" data-id="77:822"><span class="span0-1bKVjJ">Your very own </span><span class="span1-1bKVjJ">gloID</span></div><div class="use-this-glo-id-ticate-yourself-C61RwL" data-id="77:823">Use this gloID anywhere around the globe to authenticate yourself.</div><div class="no-need-to-carr-hereever-you-go-C61RwL" data-id="77:828"><span class="span0-vXXHwR">No need to carry your documents around the globe to verify yourself. We give you </span><span class="span1-vXXHwR">ONE TAP QR SCAN </span><span class="span2-vXXHwR">solution to authenticate whereever you go :).</span></div><img class="rectangle-61-C61RwL" data-id="77:407" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/rectangle-61@1x.png"><img class="rectangle-64-C61RwL" data-id="77:408" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/rectangle-64@1x.png"><img class="mask-group-VMr6Om" data-id="77:409" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/mask-group-2@2x.png"><div class="group-9-C61RwL animate-enter" data-id="77:412"><div class="group-7-9dtg3L" data-id="77:413"><img class="gloid-bjmSAl" data-id="77:2178" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b905cb8cc1f3e712e389f/img/gloid@1x.png"><img class="vector-bjmSAl" data-id="77:2177" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b905cb8cc1f3e712e389f/img/vector@1x.png"></div><div class="group-8-9dtg3L" data-id="77:418"><img class="gloid-fDZWF0" data-id="77:2180" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b905cb8cc1f3e712e389f/img/gloid@1x.png"><img class="vector-fDZWF0" data-id="77:2179" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b905cb8cc1f3e712e389f/img/vector@1x.png"></div></div><div class="group-75-C61RwL" data-id="77:423"><div class="rectangle-59-sDLNVS" data-id="77:424"></div><img class="rectangle-60-sDLNVS" data-id="77:425" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/rectangle-60-3@1x.png"><div class="a-single-monoau-umans-worldwide-sDLNVS" data-id="77:426">A single monoauth management super application integrating power of modern tech and AR/VR technology to make this process simpler and easier for humans worldwide</div><div class="what-is-glo-id-sDLNVS" data-id="77:427">What is GloID?</div></div><img class="mask-group-mzXdH9" data-id="77:428" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/mask-group-3@2x.png"><img class="rectangle-62-C61RwL" data-id="77:431" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/rectangle-62@1x.png"><div class="group-78-C61RwL" data-id="77:432"><img class="simple-mockup-free-scene2-1-hlxJRL" data-id="77:433" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/simple-mockup-free-scene2-1@1x.png"><img class="simple-mockup-free-scene-3-hlxJRL" data-id="77:434" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/simple-mockup-free-scene-3@1x.png"><img class="simple-mockup-free-scene4-1-hlxJRL" data-id="77:435" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/simple-mockup-free-scene4-1@2x.png"><img class="simple-mockup-free-scene3-1-hlxJRL" data-id="77:436" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/simple-mockup-free-scene3-1@2x.png"><img class="subtract-hlxJRL" data-id="77:437" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/subtract@1x.png"><div class="group-77-hlxJRL" data-id="77:440"><img class="simple-mockup-free-scene8-1-B2dluX" data-id="77:441" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/simple-mockup-free-scene8-1@2x.png"><img class="simple-mockup-free-scene7-1-B2dluX" data-id="77:442" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/simple-mockup-free-scene7-1@2x.png"><img class="simple-mockup-free-scene7-2-B2dluX" data-id="77:443" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/simple-mockup-free-scene7-2@2x.png"><img class="simple-mockup-free-scene6-1-B2dluX" data-id="77:444" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/simple-mockup-free-scene6-1@2x.png"><img class="simple-mockup-free-scene5-2-B2dluX" data-id="77:445" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/simple-mockup-free-scene5-2@2x.png"></div></div><div class="group-84-C61RwL" data-id="77:446"><div class="frame-69-ahGy4x border-0-9px-aquamarine" data-id="77:447"><div class="unique-digital-on-registration-PtzMk2" data-id="77:448"><span class="span0-OdpppD">Unique digital ID</span><span class="span1-OdpppD"> that is assigned upon registration</span></div></div><div class="frame-72-ahGy4x border-0-9px-aquamarine" data-id="77:449"><div class="easy-translatio-f-ar-technology-DnLFAZ" data-id="77:450"><span class="span0-KUzm1Q">Easy translation</span><span class="span1-KUzm1Q"> between numerous languages with the help of </span><span class="span2-KUzm1Q">AR technology.</span></div></div><div class="frame-73-ahGy4x border-0-9px-aquamarine" data-id="77:451"><div class="one-stop-global-authentication-kpS7Z4 atkinsonhyperlegible-regular-normal-baby-powder-18px" data-id="77:452"><span class="span0-Hpn86H">One-stop</span><span class="span1-Hpn86H"> Global authentication</span></div></div><div class="frame-72-9itK1d border-0-9px-aquamarine" data-id="77:453"><div class="provides-news-a-policy-changes-CRzuAw atkinsonhyperlegible-regular-normal-baby-powder-18px" data-id="77:454"><span class="span0-poIyxh">Provides news and</span><span class="span1-poIyxh"> updates</span><span class="span2-poIyxh"> about various </span><span class="span3-poIyxh">policy changes </span></div></div><div class="frame-70-ahGy4x border-0-9px-aquamarine" data-id="77:457"><div class="it-curbs-user-f-entire-process-q0qziN atkinsonhyperlegible-regular-normal-baby-powder-18px" data-id="77:458"><span class="span0-cP3HsV">It </span><span class="span1-cP3HsV">curbs user frustration</span><span class="span2-cP3HsV"> of carrying around countless documents and physical IDs as well as </span><span class="span3-cP3HsV">reduces paper wastage</span><span class="span4-cP3HsV"> by </span><span class="span5-cP3HsV">automating the entire process</span><span class="span6-cP3HsV">.</span></div></div><div class="frame-71-ahGy4x border-0-9px-aquamarine" data-id="77:455"><div class="verification-be-ue-to-each-user-h2qbqZ atkinsonhyperlegible-regular-normal-baby-powder-18px" data-id="77:456"><span class="span0-kqJnKE">Verification becomes hassle-free with a </span><span class="span1-kqJnKE">one-tap QR code</span><span class="span2-kqJnKE"> that is unique to each user.</span></div></div></div><div class="thats-where-we-step-in-C61RwL" data-id="77:459"><span class="span0-1TDtIX">That’s where </span><span class="span1-1TDtIX">we</span><span class="span2-1TDtIX"> step in</span></div><div class="group-85-C61RwL" data-id="77:460"><div class="frame-67-rFX9Nh" data-id="77:461"><p class="an-office-worke-paper-a-day-ie-ZZDxz8 atkinsonhyperlegible-regular-normal-baby-powder-14-2px" data-id="77:462">An office worker uses 1kg of paper a day i.e.</p><div class="group-79-ZZDxz8" data-id="77:463"><div class="x10000-vapvpH" data-id="77:464">10,000</div><div class="sheets-a-year-vapvpH" data-id="77:465">sheets a year</div></div><p class="that-amounts-to-n-just-one-year-ZZDxz8 atkinsonhyperlegible-regular-normal-baby-powder-14-2px" data-id="77:466">That amounts to almost a trillion sheets being used up for paperwork in just one year.</p></div><div class="frame-68-rFX9Nh" data-id="77:467"><p class="there-are-6500-es-in-the-world-fTjTHD atkinsonhyperlegible-regular-normal-baby-powder-14-2px" data-id="77:468">There are 6500 official languages in the world.</p><div class="group-79-fTjTHD" data-id="77:469"><div class="x6500-7g40hq" data-id="77:470">6,500</div><div class="official-languages-7g40hq" data-id="77:471">official languages</div></div><p class="and-on-average-k-1-2-languages-fTjTHD atkinsonhyperlegible-regular-normal-baby-powder-14-2px" data-id="77:472">and on average a person can only speak 1-2 languages</p></div></div><div class="group-82-C61RwL" data-id="77:473"><h1 class="gloid-ojBfAf" data-id="77:474"><span class="span0-ZGaRhJ">GLO</span><span class="span1-ZGaRhJ">ID</span></h1><div class="the-only-id-you-will-ever-need-ojBfAf" data-id="77:475">The only ID you will ever need</div><img class="starting-1-ojBfAf" data-id="77:476" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/starting-1-1@1x.png"></div><div class="group-83-C61RwL" data-id="77:479"><div class="rectangle-59-jQ4qbJ" data-id="77:480"></div><img class="rectangle-60-jQ4qbJ" data-id="77:481" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/rectangle-60-4@1x.png"><div class="it-provides-a-n-dersyand-manner-jQ4qbJ" data-id="77:482"><span class="span0-ra68bK">It provides a new, digital identity to the user that allows them to use one-touch authentication even when they don’t have their physical documents or IDs with them. It automates the whole process and reduces wastage of resources as well as the time taken for verification.<br>GloID is a global service as it helps translate forms in over </span><span class="span1-ra68bK">6500 official languages</span><span class="span2-ra68bK"> of the world and also informs the users of important policy updates in an easy-to-undersyand manner. </span></div><div class="how-it-helps-jQ4qbJ" data-id="77:483">How it helps?</div></div><div class="group-75-VMr6Om" data-id="77:488"><div class="rectangle-59-JiBPzy" data-id="77:489"></div><img class="rectangle-60-JiBPzy" data-id="77:490" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/rectangle-60-5@1x.png"><div class="with-never-endi-aucratic-system-JiBPzy" data-id="77:491">With never-ending and often-confusing forms, long queues, and the endless waiting from the scheduling of appointments to the verification of documents, as well as authentication, the average person faces a lot of difficulties as a part of the bureaucratic system.</div><div class="problem-JiBPzy" data-id="77:492">Problem</div><div class="icround-report-problem-JiBPzy" data-id="77:493"><img class="vector-EUwuvr" data-id="77:494" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/vector-5@2x.png"></div></div><div class="group-86-C61RwL" data-id="77:504"><img class="on3-1-cPi90N" data-id="77:502" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/on3-1-1@1x.png"><img class="on1-1-cPi90N" data-id="77:500" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/on1-1-1@1x.png"><img class="on2-1-cPi90N" data-id="77:501" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/on2-1-1@1x.png"><img class="login-1-cPi90N" data-id="77:503" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/login-1-1@1x.png"></div><div class="group-87-C61RwL" data-id="77:821"><img class="my-qr-1-D1n0rW" data-id="77:819" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/my-qr-1@1x.png"><img class="gloid-1-D1n0rW" data-id="77:820" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/gloid-1-1@1x.png"></div><div class="group-74-C61RwL" data-id="68:516"><div class="group-73-aCi14x" data-id="68:517"><img class="union-P7Rke1" data-id="68:518" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/union@2x.png"><img class="ellipse-4-P7Rke1" data-id="68:522" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-4@2x.png"><img class="ellipse-5-P7Rke1" data-id="68:523" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-5@2x.png"><img class="ellipse-6-P7Rke1" data-id="68:524" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-6@2x.png"><img class="image-16-P7Rke1" data-id="68:525" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/image-16@2x.png"></div><img class="ellipse-15-aCi14x" data-id="68:526" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-15@2x.png"><img class="ellipse-24-aCi14x" data-id="68:527" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-24@2x.png"><img class="ellipse-25-aCi14x" data-id="68:528" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-25@2x.png"><img class="ellipse-26-aCi14x" data-id="68:529" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-26@2x.png"><img class="ellipse-27-aCi14x" data-id="68:530" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-27@2x.png"><img class="ellipse-18-aCi14x" data-id="68:531" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-18@2x.png"><img class="ellipse-16-aCi14x" data-id="68:532" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-16@2x.png"><img class="ellipse-19-aCi14x" data-id="68:533" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-19@2x.png"><img class="ellipse-22-aCi14x" data-id="68:534" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-22@2x.png"><img class="ellipse-23-aCi14x" data-id="68:535" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-23@2x.png"><img class="ellipse-17-aCi14x" data-id="68:536" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-17@2x.png"><img class="ellipse-20-aCi14x" data-id="68:537" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-20@2x.png"><img class="ellipse-21-aCi14x" data-id="68:538" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/ellipse-21@2x.png"></div><img class="self-help-1-C61RwL" data-id="77:829" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/self-help-1-1@1x.png"><img class="blog-C61RwL" data-id="77:830" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/blog-1@1x.png"><img class="home-VMr6Om" data-id="77:832" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/home-1@1x.png"><div class="group-81-C61RwL" data-id="77:495"><div class="group-80-7olElM" data-id="77:496"><img class="screenshot-56-1-Z3yGKt" data-id="77:497" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/screenshot--56--1-1@1x.png"><div class="rectangle-63-Z3yGKt" data-id="77:498"></div></div><div class="rectangle-64-7olElM" data-id="77:499"></div></div><img class="ar-vr-1-C61RwL" data-id="77:1163" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b905cb8cc1f3e712e389f/img/ar-vr-1@1x.png"><img class="mask-group-QxM5SU" data-id="77:2090" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b905cb8cc1f3e712e389f/img/mask-group-3@1x.png"><img class="mask-group-2P4qUJ" data-id="77:2184" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b905cb8cc1f3e712e389f/img/mask-group-4@1x.png"><img class="mask-group-qr8e7q" data-id="77:2098" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/mask-group-4@1x.png"><div class="introducing-C61RwL" data-id="77:841">Introducing</div><img class="super-features-C61RwL" data-id="77:843" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b905cb8cc1f3e712e389f/img/super-features@2x.png"><div class="group-88-C61RwL" data-id="77:2079"><img class="ar-vr-screen-1-2p4Gmi" data-id="77:2075" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/ar-vr-screen-1-1@1x.png"><img class="ar-vr-2-2p4Gmi" data-id="77:2076" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/ar-vr-2-1@1x.png"><img class="ar-vr-3-2p4Gmi" data-id="77:2077" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/ar-vr-3-1@1x.png"><img class="ar-vr-4-2p4Gmi" data-id="77:2078" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/ar-vr-4-1@1x.png"></div><div class="with-our-ar-vr-to-authenticate-C61RwL" data-id="77:1164">With our AR VR technology, get details of organisation around you using our service to authenticate.</div><div class="get-support-for-language-forms-C61RwL atkinsonhyperlegible-regular-normal-white-24px" data-id="77:2080">Get support for Form filling in multi language forms.</div><div class="ar-vr-to-map-view-feature-C61RwL atkinsonhyperlegible-regular-normal-white-24px" data-id="77:2081">AR VR to MAP view feature.</div><div class="smart-analysis-authentication-C61RwL atkinsonhyperlegible-regular-normal-white-24px" data-id="77:2082">Smart analysis of users authentication</div><div class="easy-form-filli-smart-qr-codes-C61RwL atkinsonhyperlegible-regular-normal-white-24px" data-id="77:2083">Easy form filling with smart QR codes</div><img class="mask-group-J1YQmd" data-id="77:2087" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b8935b8d88bc8b6872315/img/mask-group-4@1x.png"><img class="history-C61RwL" data-id="77:831" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/history-1@1x.png"><div class="thank-you-for-scrolling-C61RwL" data-id="77:2093">Thank you for scrolling</div><div class="gloid-C61RwL" data-id="77:2124"><span class="span0-s0gM1Q">GLO</span><span class="span1-s0gM1Q">ID</span></div><div class="group-89-C61RwL" data-id="77:2196"><img class="success-1-5brNdF" data-id="77:2195" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/success-1-1@2x.png"><img class="f3-1-5brNdF" data-id="77:2192" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/f3-1-1@1x.png"><img class="f1-1-5brNdF" data-id="77:2194" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/f1-1-1@2x.png"><img class="add-1-5brNdF" data-id="77:2191" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/add-1-1@1x.png"><img class="f2-1-5brNdF" data-id="77:2193" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/603254521ec2696437c2ac6f/releases/603b91d1b8d88bc8b687232e/img/f2-1-1@1x.png"></div><div class="manage-all-your-es-at-one-place-C61RwL" data-id="77:2197">Manage all your identities at one place</div><div class="a-one-stop-solu-tities-securely-C61RwL" data-id="77:2198">A one stop solution on managing all your identities securely</div></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script><script>function ShowOnScroll() {
+    this.toShow = [];
+    this.nextEventY = undefined;
+}
+
+ShowOnScroll.prototype.show = function(e) {
+    e.style.display = "";
+};
+
+ShowOnScroll.prototype.hide = function(e) {
+    e.style.display = "none";
+};
+
+ShowOnScroll.prototype.getTop = function(e) {
+    if (e.Top != undefined && e.Top != 0) {
+        return e.Top;
+    }
+    var top = 0;
+    var iter = e;
+    do {
+        top += iter.offsetTop || 0;
+        iter = iter.offsetParent;
+    } while (iter);
+    e.Top = top;
+    return top;
+};
+
+ShowOnScroll.prototype.onScroll = function() {
+    var screenBottom = window.pageYOffset + window.innerHeight;
+    if (this.nextEventY == undefined || this.nextEventY > screenBottom) {
+        return;
+    }
+    this.nextEventY = undefined;
+    for (var i = 0; i < this.toShow.length; i++) {
+        var e = this.toShow[i];
+        var top = this.getTop(e);
+        if (top < screenBottom) {
+            this.show(e);
+            this.toShow.shift();
+            i--;
+        } else {
+            this.nextEventY = top;
+            break;
+        }
+    }
+};
+
+ShowOnScroll.prototype.resetScrolling = function() {
+    // Clear state
+    var screenBottom = window.pageYOffset + window.innerHeight;
+    for (var i = 0; i < this.toShow.length; i++) {
+        var e = this.toShow[i];
+        this.show(e);
+    }
+    this.toShow = [];
+    this.nextEventY == undefined;
+
+    // Collect items
+    var itemsToShowOnScroll = Array.prototype.slice.call(document.getElementsByTagName("*"));
+    itemsToShowOnScroll = itemsToShowOnScroll.filter(function(e) { return e.getAttribute("show-on-scroll") != undefined });
+    var getTop = this.getTop;
+    itemsToShowOnScroll.sort(function(a, b) {
+        return getTop(a) - getTop(b);
+    });
+    for (var i = 0; i < itemsToShowOnScroll.length; i++) {
+        var e = itemsToShowOnScroll[i];
+        var top = this.getTop(e);
+        if (top < screenBottom) {
+            continue;
+        }
+        this.toShow.push(e);
+        this.hide(e);
+        this.nextEventY = this.nextEventY != undefined ? this.nextEventY : top;
+    }
+};
+
+ShowOnScroll.prototype.handleEvent = function(e) {
+    switch (e.type) {
+        case "scroll":
+            this.onScroll();
+            break;
+        case "resize":
+            this.resetScrolling();
+            break;
+    }
+};
+
+ShowOnScroll.prototype.init = function() {
+    this.resetScrolling();
+    window.addEventListener("scroll", this);
+    window.addEventListener("resize", this);
+};
+
+// After anima-src
+setTimeout(function() {
+    var instShowOnScroll = new ShowOnScroll();
+    instShowOnScroll.init();
+}, 250);</script></body></html>
+
